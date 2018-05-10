@@ -1,0 +1,7 @@
+Gris : #FAFAFA
+Gris font : #98A0AA
+Gris des input text : #F9F9F9
+Gris font input text : #C8C8C8
+Gris font footer : #696F79
+gris dans "Our Team" : #F4F4F4
+black dans "Our Team" et footer : #1C1D21
