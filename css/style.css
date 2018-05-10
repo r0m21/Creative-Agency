@@ -58,6 +58,8 @@
     
     .bg-img-1{background: url(../img/background1.jpg) center 0 no-repeat fixed; background-size: cover;}
 
+    .bg-1{background-color: #FAFAFA;}
+    
     .filter-black{background-color:rgba(28, 29, 33, 0.8);} /* filtre noir sur le header */
 
     /* =========================================================================
