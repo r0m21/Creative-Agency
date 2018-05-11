@@ -6,6 +6,6 @@ Gris font footer : #696F79
 gris dans "Our Team" : #F4F4F4
 black dans "Our Team" et footer : #1C1D21
 bleu pour surlignement, bouton, bordure des boutons, font icon : #6195FF
-/!\ Même couleur pour les hover d'élément bleu, juste l'opacité de base est à 0.8 et revient à 1
-quand on est au survol de l'élément.
+bleu pour les éléments en hover : #23527c
+
 
