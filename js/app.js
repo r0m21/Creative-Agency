@@ -15,7 +15,5 @@ $(document).ready(function(){
                 items: 2
             }
         }
-
     });
-
   });

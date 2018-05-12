@@ -47,12 +47,19 @@
     .w-70{width:70px;}
 
     /* =========================================================================
-                                    Font-size & Font-family
+                            Font-size & Font-family & font-weight
     ========================================================================= */
 
     .fs-20{font-size: 20px;}
     .fs-35{font-size: 35px;}
 
+    .Montserrat{font-family: "Montserrat", arial, sans-serif;}
+    .Varela{font-family: "Varela Round", arial, sans-serif;}
+
+    .regular{font-weight: 400;}
+    .medium{font-weight: 500;}
+    .bold{font-weight: 700;}
+    
     /* =========================================================================
                                 Color & Background/filtre & border
     ========================================================================= */
@@ -63,8 +70,8 @@
     .color-4{color: #C8C8C8;} /* Gris des font input text*/
     .color-5{color: #F4F4F4;} /* Gris dans "Our team" */
     .color-5{color: #1C1D21;} /* Noir dans "Our team" */
-    .color-6{color: #6195FF;} /* Bleu */
-    .color-7{color: #23527c;} /* Bleu pour les hover*/
+    .color-6{color: #6195FF;} /* Bleu clair */
+    .color-7{color: #23527c;} /* Bleu foncé */
     
     .bg-img-1{background: url(../img/background1.jpg) center 0 no-repeat fixed; background-size: cover;}
     
@@ -76,22 +83,48 @@
     .filter-black{background-color:rgba(28, 29, 33, 0.8);} /* filtre noir sur un élément*/
 
     .border-1{border: 1px solid #6195FF;}
+    .border-2{border: 1px solid #EEE;}
 
     /* =========================================================================
                                     Géneral Générique
     ========================================================================= */
-    
-    .decoration-none{text-decoration:none;}
 
+    .line-height-16{line-height: 1.6;}
 
+    .no-decoration:hover{text-decoration:none;}
 
 /* =========================================================================
                                 Classe Spécifique
 ========================================================================= */
 
+    /* =========================================================================
+                                    Section 1
+    ========================================================================= */
 
+    .overlay:after {    /* Effet background noir */
+        content: "";
+        background-color: #1C1D21;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 0%;
+        z-index: -1;
+        -webkit-transition: 0.2s width;
+        transition: 0.2s width;
+    }
+    .overlay:hover:after{
+        width:100%;
+    }
 
+    .overlay:hover h3{  /* Changement de couleur du titre quand on est en hover sur le bloc */
+        color: #fff;
+    }
 
+    .overlay a:hover{   /* Lien en hover */
+        color: #337ab7;
+    }
+        
     /* =========================================================================
                                     Géneral Spécifique
     ========================================================================= */
@@ -273,10 +306,10 @@
                                     Formulaire / Contact
     ========================================================================= */
 
-    form input:nth-child(1){
+    form input:nth-child(1){ /* Resize des 2 premier input */
         width: calc(50% - 10px);
     }
-    form input:nth-child(2){
+    form input:nth-child(2){ /* Ajout d'un margin pour faire l'écart entre les 2 input */
         margin-left: 15px;
         width: calc(50% - 10px);
     }
@@ -285,7 +318,7 @@
                                         Footer
     ========================================================================= */
 
-    .blue-bloc{
+    .blue-bloc{ /* Petit bloc bleu qui contient les font icon des réseaux sociaux */
         display: flex;
         width: 50px;
         height: 50px;
@@ -293,10 +326,6 @@
         background-color: #6195FF;
     }
 
-    .blue-bloc:hover{
-        opacity: 0.8;
-    }
+    .blue-bloc:hover{opacity: 0.8;}
 
-    .color-7-hover{
-        color: #23527c;
-    }
+    footer p a:hover{color: #23527c;}
