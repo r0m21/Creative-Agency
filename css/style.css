@@ -64,6 +64,7 @@
                                 Color & Background/filtre & border
     ========================================================================= */
 
+    .color-title{color:#10161A;} /* Titre de section */
     .color-1{color: #FAFAFA;} /* Gris */
     .color-2{color: #98A0AA;} /* Gris font */
     .color-3{color: #F9F9F9;} /* Gris des input text */
@@ -101,7 +102,7 @@
                                     Section 1
     ========================================================================= */
 
-    .overlay:after {    /* Effet background noir */
+    .overlay-x:after {    /* Effet background noir */
         content: "";
         background-color: #1C1D21;
         position: absolute;
@@ -113,18 +114,62 @@
         -webkit-transition: 0.2s width;
         transition: 0.2s width;
     }
-    .overlay:hover:after{
+    .overlay-x:hover:after{
         width:100%;
     }
 
-    .overlay:hover h3{  /* Changement de couleur du titre quand on est en hover sur le bloc */
+    .overlay-x:hover h3{  /* Changement de couleur du titre quand on est en hover sur le bloc */
         color: #fff;
     }
 
-    .overlay a:hover{   /* Lien en hover */
+    .overlay-x a:hover{   /* Lien en hover */
         color: #337ab7;
     }
-        
+    
+    /* =========================================================================
+                                    Section 2
+    ========================================================================= */
+
+    .overlay{   /* Filtre noir qui apparait en hover */
+        background-color: #1C1D21;
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        opacity: 0;
+        transition-delay: 0.2s;
+    }
+
+    .work-content{  /* Contenu de l'article */
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25px;
+        right: 25px;
+        opacity: 0;
+        transition-delay: 0.2s;
+    }
+
+    .work:hover .overlay, .work:hover .work-content, .lightbox:hover{   /* Effets */
+        opacity: 0.8;
+        transition: 0.2s opacity;
+        transition-delay: 0s;
+    }
+
+    .lightbox{  /* Petite box bleu (liens) */
+        display:flex;
+        width: 50px;
+        height: 50px;
+        background-color: #6195FF;
+        color: #FFF;
+        margin: 0 5px;
+    }
+
+    
     /* =========================================================================
                                     Géneral Spécifique
     ========================================================================= */
