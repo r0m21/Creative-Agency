@@ -139,6 +139,7 @@
         bottom:0;
         opacity: 0;
         transition-delay: 0.2s;
+        z-index:0;
     }
 
     .work-content{  /* Contenu de l'article */
@@ -152,14 +153,41 @@
         right: 25px;
         opacity: 0;
         transition-delay: 0.2s;
+        z-index:1;
     }
 
+    .work-content h5{
+        transform: translateY(100%);
+        opacity :0;
+        transition : 0.2s;
+        transition-delay : 0.1s;
+    }
+
+    .work:hover .work-content h5{
+        transform : translateY(0);
+        opacity:1;
+    }
+
+    .work-content p{
+        transform : translateY(25%);
+        transition : 0.2s;
+        transition-delay : 0.1s;
+    }
+    .work:hover .work-content p{
+        transform : translateY(0);
+        opacity:1;
+    }
+
+    .work:hover .lightbox{
+        opacity:1;
+    }
+    
     .work:hover .overlay, .work:hover .work-content, .lightbox:hover{   /* Effets */
         opacity: 0.8;
         transition: 0.2s opacity;
         transition-delay: 0s;
     }
-
+    .work:hover .work-content{opacity: 1; transition: 0.2s opacity; transition-delay: 0s;}
     .lightbox{  /* Petite box bleu (liens) */
         display:flex;
         width: 50px;
@@ -167,9 +195,11 @@
         background-color: #6195FF;
         color: #FFF;
         margin: 0 5px;
+        opacity : 0;
+        transition : 0.2s;
+        transition-delay:0.2s;
     }
 
-    
     /* =========================================================================
                                     Géneral Spécifique
     ========================================================================= */
