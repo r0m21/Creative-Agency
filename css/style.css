@@ -156,6 +156,7 @@
         z-index:1;
     }
 
+    /* Les effets du bloc work-content */
     .work-content h5{
         transform: translateY(100%);
         opacity :0;
@@ -182,12 +183,14 @@
         opacity:1;
     }
     
-    .work:hover .overlay, .work:hover .work-content, .lightbox:hover{   /* Effets */
+    .work:hover .overlay, .work:hover .lightbox:hover{   /* Effets */
         opacity: 0.8;
         transition: 0.2s opacity;
         transition-delay: 0s;
     }
+
     .work:hover .work-content{opacity: 1; transition: 0.2s opacity; transition-delay: 0s;}
+
     .lightbox{  /* Petite box bleu (liens) */
         display:flex;
         width: 50px;
@@ -196,9 +199,25 @@
         color: #FFF;
         margin: 0 5px;
         opacity : 0;
-        transition : 0.2s;
-        transition-delay:0.2s;
+        transition: 0.2s opacity;
+        transition-delay: 0.2s;
     }
+
+    /* =========================================================================
+                                    Section 3
+    ========================================================================= */
+    
+    .box-offer{
+        padding: 40px 20px 40px 70px;
+        position:relative;
+    }
+
+    article .box-offer i{
+        position: absolute;
+        left: 20px;
+        
+    }
+
 
     /* =========================================================================
                                     Géneral Spécifique
