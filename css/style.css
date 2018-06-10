@@ -27,10 +27,11 @@
 
     .mr-15{margin-right: 15px;}
     
+    .p-10{padding: 10px;}
     .p-20{padding: 20px;}
 
     .plr-15{padding: 0 15px;}
-    
+
     .ptb-15{padding:15px 0;}
     .ptb-60{padding: 60px 0;}
     .ptb-100{padding: 100px 0;}
@@ -74,10 +75,10 @@
     .color-2{color: #98A0AA;} /* Gris font */
     .color-3{color: #F9F9F9;} /* Gris des input text */
     .color-4{color: #C8C8C8;} /* Gris des font input text*/
-    .color-5{color: #F4F4F4;} /* Gris dans "Our team" */
     .color-5{color: #1C1D21;} /* Noir dans "Our team" */
     .color-6{color: #6195FF;} /* Bleu clair */
     .color-7{color: #23527c;} /* Bleu foncé */
+    .color-8{color: #EEE;} /* Gris clair pour les liens de la nav */
     
     .bg-img-1{background: url(../img/background1.jpg) center 0 no-repeat fixed; background-size: cover;}
     
@@ -107,10 +108,31 @@
                                     Header
     ========================================================================= */
 
+    .main-title{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    
     .logo{max-height: 50px;}
 
-    header nav ul li a:hover{color: #98A0AA;}
-    header nav ul li a::after{
+    #navigation.nav-transparent:not(.fixed-top) ul>li>a {
+        color: #fff;
+    }
+
+    header nav ul li a.active{
+        background: transparent;
+        color: #6195FF;
+    } 
+
+    header nav ul li a:hover{color: #EEE;}
+    
+    header nav ul li a::after, header nav ul li a.active::after{
         content: "";
         display: block;
         background-color: #6195FF;
@@ -118,22 +140,20 @@
         width: 0%;
         transition: width 0.2s ease;
     }
-    header nav ul li a:hover::after{
+
+    header nav ul li a:hover::after, header nav ul li a.active::after{
         width:100%;
     }
     
     /* Sticky nav */
+
     .sticky-nb-bg{
         background-color: #fff;
         border-bottom: 1px solid #eee;
-        z-index:1; 
+        z-index:999; 
     }
-    .sticky-nb-liens{
-        color: #1C1D21;
-    }
-    .sticky-nb-liens:hover{
-        color: #6195FF;
-    }
+    .sticky-nb-liens{color: #1C1D21;}
+    .sticky-nb-liens:hover{color: #6195FF;}
     /* =========================================================================
                                     Section 1
     ========================================================================= */

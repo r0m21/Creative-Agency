@@ -19,11 +19,16 @@ $(document).ready(function(){
         }
     });
 
-    $('body').scrollspy({ target: '#navigation' });
-    $('[data-spy="scroll"]').each(function () {
+    /* $('[data-spy="scroll"]').each(function () {
         var $spy = $(this).scrollspy('refresh')
       });
     console.log($('body').scrollspy({ target: '#navigation' }));
+ */
+
+    $('body').scrollspy({
+        target: '#navigation',
+        offset: $(window).height() / 2
+    });
 
     // Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
