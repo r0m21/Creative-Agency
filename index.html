@@ -15,58 +15,66 @@
 </head>
 <body>
 <!-- HEADER -->
-    <header class="bg-img-1">
-        <div class="container-fluid nomargin h100vh row d-flex text-white filter-black">
+    <header id="home" class="bg-img-1">
+        <div class="container-fluid nomargin h100vh row text-white filter-black">
+            <div class="container">
+                <div class="row">
+                    <nav id="navigation" class="col-12 d-flex justify-content-between">
 
-            <div class="offset-2 col-1 d-flex justify-content-end">
-                LOGO
+                        
+                            <a class="ptb-15" href="#">
+                                <img id="logo" class="img-fluid logo" src="img/logo-alt.png" alt="Logo">
+                            </a>
+                       
+
+                        <ul class="nav Varela">
+                            <li class="nav-item plr-15 m-auto">
+                                <a class="nav-link color-1 fs-14 ptb-15" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item plr-15 m-auto">
+                                <a class="nav-link color-1 fs-14 ptb-15" href="#about">About</a>
+                            </li>
+                            <li class="nav-item plr-15 m-auto">
+                                <a class="nav-link color-1 fs-14 ptb-15" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item plr-15 m-auto">
+                                <a class="nav-link color-1 fs-14 ptb-15" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item plr-15 m-auto">
+                                <a class="nav-link color-1 fs-14 ptb-15" href="#prices">Prices</a>
+                            </li>
+                            <li class="nav-item plr-15 m-auto">
+                                <a class="nav-link color-1 fs-14 ptb-15" href="#team">Team</a>
+                            </li>
+                            <li class="nav-item plr-15 m-auto">
+                                <a class="nav-link color-1 fs-14 ptb-15" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item plr-15 m-auto">
+                                <a class="nav-link color-1 fs-14 ptb-15" href="#contact">Contact</a>
+                            </li>
+                        </ul>                         
+                    </nav>
+                </div>
             </div>
-            <nav class="col-6 offset-2 d-flex justify-content-around">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Prices</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>                         
-            </nav>
-            <div class="container-fluid row d-flex justify-content-center">
-                <div class="col-lg-6 text-center">
-                        <h1> WE ARE CREATIVE AGENCY </h1>
-                    <p>
-                        Morbi mattis felis at nunc. Duis viverra diam non justo.
-                        In nisl. Nullam sit amet magna in magna gravida vehicula.
-                        Mauris tincidunt sem sed arcu. Nunc posuere.
-                    </p>
-                    <div>
-                        <button type="button" class="btn btn-light p-button">Get Started !</button>
-                        <button type="button" class="btn btn-primary p-button">Learn More</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="Montserrat bold fs-55 mb-20 white-text">WE ARE CREATIVE AGENCY</h1>
+                            <p class="Varela white-text">
+                                Morbi mattis felis at nunc. Duis viverra diam non justo.
+                                In nisl. Nullam sit amet magna in magna gravida vehicula.
+                                Mauris tincidunt sem sed arcu. Nunc posuere.
+                            </p>
+                        <div class="mt-20">
+                            <button type="button" class="btn btn-light p-main-button Varela color-5">Get Started !</button>
+                            <button type="button" class="btn btn-primary btn-1 text-white p-main-button Varela">Learn more</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 <!-- Section 1 "Welcome To Website" -->
-    <section class="container ptb-100">
+    <section id="about" class="container ptb-100">
     
         <div class="row mtb-15">
             <h2 class="col-12 text-center color-title Montserrat bold fs-35 separator mb-50">Welcome To Website</h2>
@@ -98,7 +106,7 @@
         </div>
     </section>
 <!-- Section 2 "Featured Works" -->
-    <section class="container-fluid ptb-100 bg-1">
+    <section id="portfolio" class="container-fluid ptb-100 bg-1">
         <h2 class="col-12 Montserrat bold fs-35 color-title text-center mb-50 separator">Featured Works</h2>
         <div class="container">
             <div class="row">
@@ -209,7 +217,7 @@
         </div>
     </section>
 <!-- Section 3 "What We Offer" -->
-    <section class="container ptb-100">
+    <section id="services" class="container ptb-100">
         <h2 class="col-12 text-center Montserrat bold color-title mb-50 fs-35 separator">What We Offer</h2>
         <div class="row">
             <article class="col-4">
@@ -343,7 +351,7 @@
         </div>
     </section>
 <!-- Section 6 "Pricing Table" -->
-    <section class="container ptb-100">
+    <section id="prices" class="container ptb-100">
         <h2 class="col-12 fs-35 separator text-center">Pricing Table</h2>
     
         <div class="row mt-70">
@@ -426,7 +434,7 @@
         </div>
     </section>
 <!-- Partie 8 "Our Team" -->
-    <section class="container ptb-100">
+    <section id="team" class="container ptb-100">
         <h2 class="text-center fs-35 separator">Our Team</h2>
         <div class="row">
             <div class="col-4 text-center p-40-20 mt-20 bg-1">
@@ -447,7 +455,7 @@
         </div>
     </section>
 <!-- Partie 9 "Recents News" -->
-    <section class="container-fluid ptb-100 bg-1">
+    <section id="blog" class="container-fluid ptb-100 bg-1">
             <h2 class="text-center fs-35 separator">Recents News</h2>
             <div class="container">
                 <div class="row mt-70">
@@ -503,7 +511,7 @@
             </div>
     </section>
 <!-- Partie 10 "Get In Touch / Contact" -->
-    <section class="container ptb-100">
+    <section id="contact" class="container ptb-100">
         <h2 class="text-center fs-35 separator">Get In Touch</h2>
             <div class="row mt-70">
                 <div class="col-4 text-center">

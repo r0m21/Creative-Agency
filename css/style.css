@@ -29,13 +29,16 @@
     
     .p-20{padding: 20px;}
 
+    .plr-15{padding: 0 15px;}
+    
+    .ptb-15{padding:15px 0;}
     .ptb-60{padding: 60px 0;}
     .ptb-100{padding: 100px 0;}
 
     .p-40-20{padding: 40px 20px;}
 
     .p-20-20-40{padding: 20px 20px 40px;}
-
+    
     /* =========================================================================
                                     Height + Width
     ========================================================================= */
@@ -53,6 +56,7 @@
     .fs-14{font-size: 14px;}
     .fs-20{font-size: 20px;}
     .fs-35{font-size: 35px;}
+    .fs-55{font-size:55px;}
 
     .Montserrat{font-family: "Montserrat", arial, sans-serif;}
     .Varela{font-family: "Varela Round", arial, sans-serif;}
@@ -99,6 +103,37 @@
                                 Classe Spécifique
 ========================================================================= */
 
+    /* =========================================================================
+                                    Header
+    ========================================================================= */
+
+    .logo{max-height: 50px;}
+
+    header nav ul li a:hover{color: #98A0AA;}
+    header nav ul li a::after{
+        content: "";
+        display: block;
+        background-color: #6195FF;
+        height: 2px;
+        width: 0%;
+        transition: width 0.2s ease;
+    }
+    header nav ul li a:hover::after{
+        width:100%;
+    }
+    
+    /* Sticky nav */
+    .sticky-nb-bg{
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        z-index:1; 
+    }
+    .sticky-nb-liens{
+        color: #1C1D21;
+    }
+    .sticky-nb-liens:hover{
+        color: #6195FF;
+    }
     /* =========================================================================
                                     Section 1
     ========================================================================= */
